@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Naxxcht Portfolio</title>
+        <link href="./main.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#home"><img src="./logo-w-text.png"/></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="#home"> <span>Home</span></a></li>
+                    <li><a href="#about"><span>About Me</span></a></li>
+                    <li><a href="#skills"> <span>Skills</span></a></li>
+                    <li><a href="#contact"> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="ToggleMenu()"><i class="fa fa-bars"></i></a>
+            <div class="polygon"></div>
+            <div id="slideoutMenu" class="slideout-menu">
+                <div class="nav-close" onclick="ToggleMenu(event)">
+                    <h3>&times;</h3> <!-- Close icon -->
+                </div>
+                <img src="./logo.png" alt="fixed-image" class="logo-h"/>
+                <ul>
+                    <li class="active"><a href="#home"> <span>Home</span></a></li>
+                    <li><a href="#about"><span>About Me</span></a></li>
+                    <li><a href="#skills"> <span>Skills</span></a></li>
+                    <li><a href="#contact"> <span>Contact</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="hero-section">
+            <div class="home" id="home">
+                <div class="hero-text-container">
+                    <h1 style="color:#ffffff">Din Lienard Dudas</h1>
+                    <h2 style="color: #ffffff">I'm <span class="typing" style="color: #7520a0"></span></h2>
+                    <span> I am a second year student who loves coding. I also have experience as a Graphic Design. I enjoy building websites and application that is visually appealing. Check out my work, and feel free to reach out!</span>
+                    <div class="hero-btn">
+                        <a href="#about" class="hero-btn">Learn more about me</a>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-viewport">
+                        <div class="carousel-item">
+                            <img src="./unnamed.png" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./unnamed2.jpg" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./unnamed3.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line1"></div>
+        <section class="aboutme-section">
+            <div class="about-me" id="about">
+                <h1>About Me</h1>
+                <div class="aboutme-text">
+                    <span> I have developed a solid foundation in various programming languages, including HTML, CSS, and JavaScript. I am constantly expanding my skill set by exploring new technologies and frameworks that enhance my coding capabilities.
+                        <br>In addition to my technical skills, I have gained valuable experience in product management. I have worked on cross-functional teams to define product vision, gather requirements, and prioritize features based on user feedback and market research. This experience has honed my ability to balance technical feasibility with user needs, ensuring that the final product is both functional and aligned with business goals.
+                    </span>
+                </div>
+            </div>
+            <div class="whatimdoing">
+                <h1>What Im Doing</h1>
+                <div class="web">
+                    <h2>Web Development</h2>
+                    <p>High-quality development of sites at the intermediate level</p>
+                    <div class="poly1"></div>
+                </div>
+                <div class="product">
+                    <h2>Product Management</h2>
+                    <p>Guiding product development from concept to launch, aligning user needs with business goals.</p>
+                    <div class="poly2"></div>
+                </div>
+                <div class="design">
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive interfaces that enhance user experience.</p>
+                    <div class="poly3"></div>
+                </div>
+                <div class="photo">
+                    <h2>Photography</h2>
+                    <p>I make high-quality photos of any category at the intermediate level</p>
+                    <div class="poly4"></div>
+                </div>
+            </div>
+        </section>
+        <div class="line2"></div>
+        <section class="skills-section">
+            <div class="skill" id="skills">
+                <h3 class="skills-title">My skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-item">
+                    <div class="title-wrapper">
+                        <h5 class="h5">Web design</h5>
+                        <data value="80">80%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+                    </li>
+                    <li class="skills-item">
+                    <div class="title-wrapper">
+                        <h5 class="h5">Graphic design</h5>
+                        <data value="70">70%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 70%;"></div>
+                    </div>
+                    </li>
+      
+                    <li class="skills-item">
+      
+                    <div class="title-wrapper">
+                        <h5 class="h5">Branding</h5>
+                        <data value="90">90%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 90%;"></div>
+                    </div>
+                    </li>
+                    <li class="skills-item">
+                    <div class="title-wrapper">
+                        <h5 class="h5">WordPress</h5>
+                        <data value="20">20%</data>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress-fill" style="width: 20%;"></div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="line3"></div>
+        <section class="contact-section">
+            <div class="contact" id="contact">
+                <h1>My Contact</h1>
+                <form action="#" class="form" data-form="">
+                <div class="input-wrapper">
+                  <input type="text" name="fullname" class="form-input" placeholder="Full name" required="" data-form-input="">
+    
+                  <input type="email" name="email" class="form-input" placeholder="Email address" required="" data-form-input="">
+                </div>
+    
+                <textarea name="message" class="form-input" placeholder="Your Message" required="" data-form-input=""></textarea>
+    
+                <button class="form-btn" type="submit" disabled="" data-form-btn="" style="cursor:not-allowed;">
+                  <ion-icon name="paper-plane" role="img" class="paperplane" aria-label="paper plane"></ion-icon>
+                  <span>Send Message</span>
+            </div>
+        </section>
+        <div class="line4"></div>
+        <footer>
+            <div class="copyright">
+                <p>@2024 Dudas, Din Lienard L. (Naxxcht). All rights reserved.</p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            var typed = new Typed(".typing", {
+              strings: [
+                "a Web Developer",
+                "an E-commerce Specialist",
+                "a Graphic Designer",
+                "a Photographer",
+              ],
+              loop: true,
+              typeSpeed: 65,
+              backSpeed: 80,
+            });
+        </script>
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html>
